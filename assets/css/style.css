@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -146,7 +145,7 @@ body {
   font-weight: 600;
 }
 .accord__item::-webkit-details-marker {
-  display: none; /* quita el triángulo en navegadores WebKit */
+  display: none;
 }
 .accord__item:hover {
   color: #ad28eb;
@@ -187,6 +186,9 @@ body {
 @media (min-width: 42em) {
   body {
     background-image: url("../images/background-pattern-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
   .faqs__title {
     display: flex;
