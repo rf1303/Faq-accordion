@@ -72,16 +72,19 @@ form, input, select, textarea, button, label {
 body {
   background-image: url("../images/background-pattern-mobile.svg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
   background-color: #f9f0ff;
   font-family: worksans;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-inline: 1.5rem;
 }
 
 .wrappers__faqs {
-  width: min(20.438rem, 100%);
+  width: min(38rem, 100%);
   display: grid;
   background-color: #ffffff;
   border-radius: 0.5rem;
@@ -183,13 +186,7 @@ body {
   margin-top: 1.5rem;
 }
 
-@media (min-width: 42em) {
-  body {
-    background-image: url("../images/background-pattern-desktop.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
+@media (min-width: 47em) {
   .faqs__title {
     display: flex;
     align-items: center;
@@ -210,6 +207,19 @@ body {
   }
   .accord__text {
     font-size: textMobile-3;
+  }
+}
+@media (min-width: 75em) {
+  body {
+    background-image: url("../images/background-pattern-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+@media (max-width: 23em) {
+  body {
+    padding-inline: 1rem;
   }
 }
 
